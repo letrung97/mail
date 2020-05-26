@@ -120,7 +120,7 @@ public:
             do
                 cin >> check;
             while (check > 1);
-        } while (check == 1);
+        } while (check);
     }
     void start_compose() {
         add_umail();
@@ -136,8 +136,15 @@ public:
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-    email mail;
-    mail.start_compose();
-    mail.start_send();
+    int k = 0;
+    do {
+        email mail;
+        mail.start_compose();
+        mail.start_send();
+        cout << "\nDo you want to send another message ?\n" << "Yes(1)/No(0)\n";
+        do
+            cin >> k;
+        while (k > 1);
+    } while (k);
     return 0;
 }
