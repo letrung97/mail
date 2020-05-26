@@ -15,20 +15,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Desktop\test\easendmailobj.tlh">
+    <None Include="easendmailobj.tlh">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="..\..\Desktop\test\easendmailobj.tli">
+    <None Include="easendmailobj.tli">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Desktop\test\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Desktop\test\stdafx.h">
+    <ClInclude Include="stdafx.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

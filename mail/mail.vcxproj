@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Desktop\test\easendmailobj.tlh" />
-    <None Include="..\..\Desktop\test\easendmailobj.tli" />
+    <None Include="easendmailobj.tlh" />
+    <None Include="easendmailobj.tli" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Desktop\test\main.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Desktop\test\stdafx.h" />
+    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
