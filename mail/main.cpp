@@ -165,7 +165,7 @@ public:
         string add;
         cout << "\nHow many users you want to share this message\n";
         cin >> k;
-        cout << "\nPlease type whose email you want to send\n"
+        cout << "\nPlease type whose email you want to send\n";
         for (int i = 0; i < k; i++) {
             do
                 cin >> add;
