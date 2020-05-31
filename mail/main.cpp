@@ -61,6 +61,7 @@ void Send_mail(string mail, string msg, string to, string title, string pwd, lis
     list <string> ::iterator it;
     for (it = file.begin(); it != file.end(); ++it) {
         string attachment = *it;
+        Dir_check(attachment);
         if (oSmtp->AddAttachment(attachment.c_str()))
         {
             _tprintf(_T("Failed to add attachment with error: %s\r\n"), (const TCHAR*)oSmtp->GetLastErrDescription());
@@ -152,18 +153,19 @@ private:
     list <string> file;
 public:
     void add_umail() {
-        cout << "\nplease enter your email\n";
+        cout << "\nPlease enter your email\n";
         do
             cin >> mail;
         while (!Email_check(mail));
-        cout << "\nenter your password\n";
+        cout << "\nEnter your password\n";
         cin >> pwd;
     }
     void add_rmail() {
         int k = 0;
         string add;
-        cout << "\nPlease type whose email you want to send\n" << "how many users you want to share this message\n";
+        cout << "\nHow many users you want to share this message\n";
         cin >> k;
+        cout << "\nPlease type whose email you want to send\n"
         for (int i = 0; i < k; i++) {
             do
                 cin >> add;
