@@ -177,9 +177,9 @@ public:
         int k = 0;
         int check;
         cout << "\nTitle or subject of your mail please\n";
-        cin >> title;
+        cin.ignore();
+        getline(cin, title);
         do {
-            cin.ignore();
             msg = "";
             cout << "\nYour message ? (just double Enter to end the message)\n";
             string s;
